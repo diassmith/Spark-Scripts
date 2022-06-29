@@ -16,7 +16,7 @@ file = "/FileStore/tables/bronze/2015_summary.csv"
 #.option("header", "True")\ # getting the columns header 
 #.csv(file) #setting the variable that storing the file path
 
-#CAN USE BELLOW
+#CAN USE BELOW
 #flightData2015 = spark.read.format("csv").option("inferSchema", "True").option("header", "True").csv(file) 
 
 #OR CAN USE BELLOW BUT IT'S THE RECOMMENDED
@@ -29,7 +29,7 @@ flightData2015 = spark\
 # COMMAND ----------
 
 # DBTITLE 1,Print datatype columns from file
-# print the datatypes from the columns from dataframe(file)
+# print the datatypes columns from dataframe(file)
 flightData2015.printSchema()
 
 # COMMAND ----------
@@ -91,4 +91,4 @@ flightData2015 = spark\
 .read\
 .option("inferSchema", "False")\
 .option("header", "True")\
-.csv(arquivo)
+.csv(file)
