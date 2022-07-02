@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC ### Modos de leitura
+# MAGIC ### Reading modes
 # MAGIC - **permissive**: *Sets all fields to NULL when it finds corrupted records and puts all corrupted records in a column called _corrupt_record.* (default)
 # MAGIC 
 # MAGIC - **dropMalformed**: *Deletes a corrupted line or that it cannot read.*
