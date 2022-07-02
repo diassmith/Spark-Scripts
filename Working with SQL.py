@@ -35,8 +35,10 @@ df = spark\
 
 # COMMAND ----------
 
-# DBTITLE 1,Counting the lines on global table
-Counting the lines on global table
+# DBTITLE 1,Counting the rows on global table
+# MAGIC %sql
+# MAGIC 
+# MAGIC SELECT count(*) FROM all_files;
 
 # COMMAND ----------
 
