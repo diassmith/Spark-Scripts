@@ -24,15 +24,11 @@ df = spark\
 #|            Egypt|      United States|   24|
 #|Equatorial Guinea|      United States|    1|
 #+-----------------+-------------------+-----+
-
-
-
 df.show(5)
 
 # COMMAND ----------
 
-# DBTITLE 1,Print the amount lines in dataframe
-# imprime a quantidade de linhas do datafrme
+# DBTITLE 1,Print the amount rows in dataframe
 df.count()
 
 # COMMAND ----------

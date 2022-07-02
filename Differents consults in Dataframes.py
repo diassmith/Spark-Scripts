@@ -34,5 +34,5 @@ df.where("count < 2").show(2)
 
 # COMMAND ----------
 
-# DBTITLE 1,Getting the unic lines
+# DBTITLE 1,Getting the unic row
 df.select("ORIGIN_COUNTRY_NAME", "DEST_COUNTRY_NAME").distinct().count()

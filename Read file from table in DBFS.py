@@ -44,8 +44,8 @@ type(flightData2015)
 
 # COMMAND ----------
 
-# DBTITLE 1,Print the 3 lines from file
-#print the first 3 lines from dataframe as array format
+# DBTITLE 1,Print the 3 rows from file
+#print the first 3 rows from dataframe as array format
 
 ###########OUT##################################
 #Row(DEST_COUNTRY_NAME='United States', ORIGIN_COUNTRY_NAME='Romania', count=15),
@@ -73,8 +73,8 @@ display(flightData2015.show(3))
 
 # COMMAND ----------
 
-# DBTITLE 1,Print the amount lines from file 
-#print the amount lines in the dataframe
+# DBTITLE 1,Print the amount rows from file 
+#print the amount rows in the dataframe
 flightData2015.count()
 
 # COMMAND ----------
