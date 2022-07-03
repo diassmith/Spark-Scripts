@@ -37,3 +37,17 @@ df.printSchema()
 ###### OUT ####
 # 131004583
 df.count()
+
+# COMMAND ----------
+
+# DBTITLE 1,Writing parquet file
+# escrevendo em formato parquet
+df.write.format("parquet")\
+.mode("overwrite")\
+.save("/FileStore/tables/bigdata/bronze/df-parquet-file.parquet")
+
+# COMMAND ----------
+
+# DBTITLE 1,Consulting parquet file
+# MAGIC %fs
+# MAGIC ls /FileStore/tables/bigdata/bronze/df-parquet-file.parquet
